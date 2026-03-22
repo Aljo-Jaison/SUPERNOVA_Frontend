@@ -8,7 +8,7 @@ import { StarFlares } from './StarFlares';
 
 export default function NebulaScene() {
   return (
-    <div className="absolute top--100 right--100 w-[600px] h-[600px] z-0">
+    <div className="absolute top-1 right-0 w-[600px] h-[600px] z-0">
       <Canvas camera={{ position: [0, 5, 40], fov: 45 }}>
         
         <Suspense fallback={null}>
