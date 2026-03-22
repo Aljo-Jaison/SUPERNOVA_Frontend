@@ -1,8 +1,16 @@
 @import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap');
 
 @theme {
+  --font-clash: 'Clash Display', sans-serif;
   --animate-twinkle: twinkle 3s ease-in-out infinite;
   --animate-shooting: shooting 5s linear infinite;
+  --animate-shine: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(200%) skewX(-20deg); }
 }
 
 @keyframes twinkle {

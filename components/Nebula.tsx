@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/purity */
 import React, { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';

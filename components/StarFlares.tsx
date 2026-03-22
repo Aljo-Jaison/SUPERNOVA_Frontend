@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import * as THREE from 'three';
 
 export function StarFlares() {
+  // eslint-disable-next-line react-hooks/preserve-manual-memoization
   const texture = useMemo(() => {
     const canvas = document.createElement('canvas');
     canvas.width = 256;

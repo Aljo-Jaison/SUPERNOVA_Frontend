@@ -1,0 +1,11 @@
+.scroll-reveal {
+  margin: 20px 0;
+}
+
+.scroll-reveal-text {
+  /* Removed hardcoded font-size, line-height, and font-weight to let Tailwind classes work */
+}
+
+.word {
+  display: inline-block;
+}

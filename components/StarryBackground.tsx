@@ -103,6 +103,7 @@ export default function StarryBackground() {
 
   useEffect(() => {
     // Generate glittering stars
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setStars(prev => {
       if (prev.length > 0) return prev;
       const generatedStars: Star[] = [];

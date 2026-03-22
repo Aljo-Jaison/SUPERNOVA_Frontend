@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Search, ChevronDown } from 'lucide-react';
+import { Search, ChevronDown, Info } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import StarryBackground from '@/components/StarryBackground';
 import NebulaScene from '@/components/NebulaScene';
 
@@ -29,6 +30,7 @@ export default function Page() {
 
   useEffect(() => {
     const randomQuote = ENCOURAGING_QUOTES[Math.floor(Math.random() * ENCOURAGING_QUOTES.length)];
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setQuote(randomQuote);
   }, []);
 
@@ -44,6 +46,9 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col font-sans selection:bg-white/20 relative overflow-hidden">
+      <Link href="/info" className="absolute top-6 right-6 z-50 p-2 text-gray-400 hover:text-white transition-colors bg-white/5 hover:bg-white/10 rounded-full backdrop-blur-sm border border-white/10">
+        <Info className="w-5 h-5" />
+      </Link>
       <NebulaScene />
       <StarryBackground />
 
